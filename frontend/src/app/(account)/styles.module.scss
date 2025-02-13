@@ -1,0 +1,51 @@
+.card-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.card {
+  height: 60%;
+  width: 40%;
+  min-height: 300px;
+  min-width: 200px;
+}
+
+.header {
+  padding: 0 24px 24px 24px;
+
+}
+
+.card-context {
+  display: flex;
+  background-color: $col-dark-1;
+  height: 100%;
+  gap: 24px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  & > h1 {
+    text-align: center;
+  }
+
+  & > div {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.error-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-height: 36px;
+  justify-content: center;
+}
+
+@media (max-width: 800px) {
+  .card-container > .card {
+    max-width: 100%;
+  }
+}
