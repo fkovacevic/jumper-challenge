@@ -11,8 +11,6 @@ import ConnectButton from "@/components/ConnectButton";
 import { authenticationAdapter } from "@/config/authAdapter";
 
 import styles from './styles.module.scss';
-import { disconnect } from "wagmi/actions";
-import config from "@/config/wagmiConfig";
 
 export default function Home() {
   const { isConnected, address, chainId, isReconnecting } = useAccount();
@@ -111,9 +109,6 @@ export default function Home() {
         </Typography>
         <ConnectButton />
        {resolveNextAction()}
-       <Button onClick={() => disconnect(config)}>
-    asd
-       </Button> 
        {error && (
           <div className={styles['error-container']}>
             <Alert variant="outlined" severity="error" sx={{ color: 'primary.light'}} >
