@@ -1,15 +1,21 @@
 # Jumper challenge
 
-## Getting start
-
-There's 2 directories into this repository with a README.md for each of those to have more informations about their respective setup.
+## Running App
 
 ### frontend
-
-classic nextjs implementation within the material ui 5 setup.
+position yourself in the frontend directory with `cd frontend`
+install dependencies with `npm i`
+run the code with `npm run dev`
 
 ### backend
+position yourself in the backend directory with `cd backend`
+install dependencies with `npm i`
+run the code with `npm run dev`
+run tests with `npm run test`
 
-expressjs 4 with some default routes and examples.
-
-## Enjoy!
+## App flow
+1. Connect your wallet to the app
+2. Sign up
+3. Go to the balances page to see your token balances  
+ 
+## Enjoy! 
