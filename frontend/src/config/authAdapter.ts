@@ -3,7 +3,7 @@ import { createSiweMessage } from "viem/siwe";
 
 export const authenticationAdapter = createAuthenticationAdapter({
     getNonce: async () => {
-      return 'some-nonce'
+      return 'somenonce123'
     },
     createMessage: ({ nonce, address, chainId }) => {
       return createSiweMessage({
